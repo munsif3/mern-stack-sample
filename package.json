@@ -1,15 +1,18 @@
 {
   "name": "mern-shopping-list",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sample MERN Stack Application",
   "main": "server.js",
   "scripts": {
+    "client-install": "npm install --prefix client",
     "start": "node server.js",
     "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Munsif Musthafa",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.3",
     "concurrently": "^4.1.0",
