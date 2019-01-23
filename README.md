@@ -1,1 +1,1 @@
-# mern-stack-sample
+##MERN Stack Example Shopping List
